@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equal Sums", "Equal Sums\Equal Sums.csproj", "{5203BC11-ED73-4AE6-ABFC-3F2C0DF56F89}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5203BC11-ED73-4AE6-ABFC-3F2C0DF56F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5203BC11-ED73-4AE6-ABFC-3F2C0DF56F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5203BC11-ED73-4AE6-ABFC-3F2C0DF56F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5203BC11-ED73-4AE6-ABFC-3F2C0DF56F89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
