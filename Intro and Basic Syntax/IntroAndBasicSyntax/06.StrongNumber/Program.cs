@@ -1,33 +1,33 @@
 ﻿using System;
 
-	class Program
+class Program
+{
+	static void Main(string[] args)
 	{
-		static void Main(string[] args)
+		int inputNum = int.Parse(Console.ReadLine());
+		long checkNum = inputNum;
+		long factorielSum = 0;
+
+		while (checkNum != 0)
 		{
-			int inputNum = int.Parse(Console.ReadLine());
-			long checkNum = inputNum;
-			long factorielSum = 0;
+			long result = checkNum % 10;
+			checkNum /= 10;
 
-			while (checkNum != 0)
+			long factorial = 1;
+			for (int i = 1; i <= result; i++)
 			{
-				long result = checkNum % 10;
-				checkNum /= 10;
+				factorial *= i;
+			}
+			factorielSum += factorial;
+		}
 
-				long factorial = 1;
-				for (int i = 1; i <= result; i++)
-				{
-					factorial *= i;
-				}
-				factorielSum += factorial;
-			}
-
-			if (factorielSum == inputNum)
-			{
-				Console.WriteLine("yes");
-			}
-			else
-			{
-				Console.WriteLine("no");
-			}
+		if (factorielSum == inputNum)
+		{
+			Console.WriteLine("yes");
+		}
+		else
+		{
+			Console.WriteLine("no");
 		}
 	}
+}
